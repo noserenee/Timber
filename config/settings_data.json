@@ -172,12 +172,6 @@
         "settings": {
         }
       },
-      "11089864892113081655": {
-        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/website-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "9010622670419788200": {
         "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-site-verification\/15507c6e-1aa3-45d3-b698-7e175e033440",
         "disabled": false,
@@ -207,6 +201,12 @@
           "insert_area": "",
           "insert_position": "afterend",
           "custom_css": ""
+        }
+      },
+      "11089864892113081655": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/website-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
         }
       }
     }
