@@ -10,9 +10,9 @@
 {
   "current": {
     "color_primary": "#747474",
-    "color_secondary": "#bbb",
+    "color_secondary": "#bbbbbb",
     "color_borders": "#e5e5e5",
-    "color_body_bg": "#fff",
+    "color_body_bg": "#ffffff",
     "color_body_text": "#333333",
     "color_footer_bg": "#f2f2f2",
     "color_footer_text": "#636363",
@@ -24,7 +24,7 @@
     "cart_notes_enable": true,
     "ajax_cart_method": "drawer",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "Https:\/\/www.facebook.com\/Shopify\/noserene3",
     "content_for_index": [
 
     ],
@@ -133,5 +133,10 @@
       "social_facebook_link": "",
       "social_twitter_link": ""
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+
+    ]
   }
 }
