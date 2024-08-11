@@ -1,0 +1,31 @@
+
+{% comment %}
+Defers the CSS so that the browser downloads it and loads it asynchronously.
+E.g. {% render 'avada-defer-css' with filename: 'filename', pages: 'index','product','collection', local: true %}
+{% endcomment %}
+
+{%- if pages contains template.name -%}
+  {%- if local -%}
+    <link
+      rel="stylesheet"
+      href="{{ filename | asset_url }}"
+      media="print"
+      onload="this.media='all'; this.onload = null">
+  {%- else -%}
+    <link
+      rel="stylesheet"
+      href="{{ filename }}"
+      media="print"
+      onload="this.media='all'; this.onload = null">
+  {%- endif -%}
+{%- else -%}
+  {%- if local -%}
+    <link
+      rel="stylesheet"
+      href="{{ filename | asset_url}}">
+  {%- else -%}
+    <link
+      rel="stylesheet"
+      href="{{ filename }}">
+  {%- endif -%}
+{%- endif -%}
