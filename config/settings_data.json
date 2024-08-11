@@ -9,12 +9,12 @@
 */
 {
   "current": {
-    "color_primary": "#747474",
+    "color_primary": "#08aca6",
     "color_secondary": "#bbbbbb",
     "color_borders": "#e5e5e5",
-    "color_body_bg": "#ffffff",
+    "color_body_bg": "#0062da",
     "color_body_text": "#333333",
-    "color_footer_bg": "#f2f2f2",
+    "color_footer_bg": "#07b772",
     "color_footer_text": "#636363",
     "color_footer_social_link": "#bbbbbb",
     "logo_use_image": false,
