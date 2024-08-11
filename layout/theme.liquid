@@ -166,7 +166,7 @@
             {% endif %}
               {% if settings.logo_use_image %}
                 <a href="/" itemprop="url" class="site-header__logo-link">
-                  <img src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
+                  <img loading="lazy" src="{{ 'logo.png' | asset_url }}" alt="{{ shop.name }}" itemprop="logo">
                 </a>
               {% else %}
                 <a href="/" itemprop="url">{{ shop.name }}</a>
