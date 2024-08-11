@@ -113,7 +113,7 @@
       </div>
 
       <div class="product-description rte" itemprop="description">
-        {{ product.description }}
+        {{ product.description | replace: '<img', '<img loading="lazy"' | replace: '<iframe', '<iframe loading="lazy"' | replace: '<video', '<video preload="none"' }}
       </div>
 
       {% comment %}

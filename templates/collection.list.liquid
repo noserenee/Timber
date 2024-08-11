@@ -32,7 +32,7 @@
       <header class="section-header">
         <h1 class="section-header__title">{{ collection.title }}</h1>
         <div class="rte rte--header">
-          {{ collection.description }}
+          {{ collection.description | replace: '<img', '<img loading="lazy"' | replace: '<iframe', '<iframe loading="lazy"' | replace: '<video', '<video preload="none"' }}
         </div>
       </header>
       <hr>
