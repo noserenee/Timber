@@ -22,7 +22,7 @@
     if ( "ActiveXObject" in win ) {
       AXO = new ActiveXObject( "htmlfile" );
       AXO.open();
-      AXO.write( '<iframe id="x"></iframe>' );
+      AXO.write( '<iframe loading="lazy" id="x"></iframe>' );
       AXO.close();
       iframe = AXO.getElementById( "x" );
     } else {

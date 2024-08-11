@@ -9,7 +9,7 @@
       Regular page content goes here.
     {% endcomment %}
     <div class="rte">
-      {{ page.content }}
+      {{ page.content | replace: '<img', '<img loading="lazy"' | replace: '<iframe', '<iframe loading="lazy"' | replace: '<video', '<video preload="none"' }}
     </div>
 
   </div>

@@ -36,7 +36,7 @@
     </header>
 
     <div class="rte" itemprop="articleBody">
-      {{ article.content }}
+      {{ article.content | replace: '<img', '<img loading="lazy"' | replace: '<iframe', '<iframe loading="lazy"' | replace: '<video', '<video preload="none"' }}
     </div>
 
     {% comment %}
