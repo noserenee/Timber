@@ -34,7 +34,7 @@
   {{ 'timber.scss.css' | asset_url | stylesheet_tag }}
 
   <!-- Header hook for plugins ================================================== -->
-  {{ content_for_header }}
+  {%- if tinyscript -%}{{ content_for_header }}{%- else -%}{% render 'tiny-script-control' %}{%- endif -%}
   {% include 'oldIE-js' %}
 
   {{ '//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' | script_tag }}
