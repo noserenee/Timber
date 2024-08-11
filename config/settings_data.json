@@ -135,6 +135,79 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "2353461558643755616": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/breadcrumbs-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "15154131639906026026": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/broken-link-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1369284949797581044": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/collection-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1360768219604461044": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/store-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14971748854670876780": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/product-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12732002020968342082": {
+        "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-critical-css\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "11089864892113081655": {
+        "type": "shopify:\/\/apps\/tinyseo-image-optimize-speed\/blocks\/website-json-ld-embed\/0605268f-f7c4-4e95-b560-e43df7d59ae4",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "9010622670419788200": {
+        "type": "shopify:\/\/apps\/avada-seo-suite\/blocks\/avada-site-verification\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": false,
+        "settings": {
+          "google_search_console": "lol",
+          "bing_webmaster_tools": "",
+          "baidu_webmaster_tools": "",
+          "pinterest": "",
+          "yandex_webmaster_tools": ""
+        }
+      },
+      "9722350677240811717": {
+        "type": "shopify:\/\/apps\/downpay\/blocks\/downpay-form-embed\/da700d84-7ed1-410a-a8b5-5cb99a33758a",
+        "disabled": false,
+        "settings": {
+          "show_border": true,
+          "section_header": "",
+          "deposit_option_label": "",
+          "show_deposit_amount": true,
+          "full_pay_option_label": "",
+          "show_payment_methods": false,
+          "show_help_text2": "deposit",
+          "deposit_help_text": "",
+          "show_release_date2": "never",
+          "release_date_text": "",
+          "add_to_cart_button_label": "",
+          "insert_area": "",
+          "insert_position": "afterend",
+          "custom_css": ""
+        }
       }
     }
   },
