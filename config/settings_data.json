@@ -1,5 +1,119 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
-  "current": "Default",
+  "current": {
+    "color_primary": "#747474",
+    "color_secondary": "#bbb",
+    "color_borders": "#e5e5e5",
+    "color_body_bg": "#fff",
+    "color_body_text": "#333333",
+    "color_footer_bg": "#f2f2f2",
+    "color_footer_text": "#636363",
+    "color_footer_social_link": "#bbbbbb",
+    "logo_use_image": false,
+    "favicon_enable": false,
+    "footer_social_enable": true,
+    "footer_newsletter_enable": true,
+    "cart_notes_enable": true,
+    "ajax_cart_method": "drawer",
+    "social_twitter_link": "",
+    "social_facebook_link": "",
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "16156609502398088594": {
+        "type": "shopify:\/\/apps\/omega-facebook-pixel\/blocks\/app-embed-block\/ecdcc423-3dbd-480c-85e8-fdb9789cf058",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "9005256451184024879": {
+        "type": "shopify:\/\/apps\/uppromote-affiliate\/blocks\/customer-referral\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13856562633712291205": {
+        "type": "shopify:\/\/apps\/downpay\/blocks\/downpay-cart-embed\/da700d84-7ed1-410a-a8b5-5cb99a33758a",
+        "disabled": false,
+        "settings": {
+          "show_currency_code": true,
+          "amount_due_today_label": "",
+          "amount_due_later_label": "",
+          "insert_area": "",
+          "insert_position": "afterend",
+          "custom_css": ""
+        }
+      },
+      "1996061711396120121": {
+        "type": "shopify:\/\/apps\/uppromote-affiliate\/blocks\/message-bar\/64c32457-930d-4cb9-9641-e24c0d9cf1f4",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "16278478101612877664": {
+        "type": "shopify:\/\/apps\/pagefly-page-builder\/blocks\/app-embed\/83e179f7-59a0-4589-8c66-c0dddf959200",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "3979034072534932226": {
+        "type": "shopify:\/\/apps\/insta-fb-metashop\/blocks\/app-embed\/a2ba3b6f-1992-4528-a81d-226ccc4d2a86",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14327677521557774844": {
+        "type": "shopify:\/\/apps\/simprosys-google-shopping-feed\/blocks\/core_settings_block\/1f0b859e-9fa6-4007-97e8-4513aff5ff3b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "3886181796285292942": {
+        "type": "shopify:\/\/apps\/cowlendar-booking\/blocks\/app-embed\/6d8b8f6a-9b3c-42b8-b2e6-a758c38d45bf",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "9776720720251544092": {
+        "type": "shopify:\/\/apps\/helium-customer-fields\/blocks\/app-embed\/bab58598-3e6a-4377-aaaa-97189b15f131",
+        "disabled": false,
+        "settings": {
+          "registration_form_id": "",
+          "edit_account_form_id": "",
+          "edit_account_link_text": "Edit account",
+          "edit_account_heading": "Edit account",
+          "edit_account_back_link_text": "Back to account",
+          "enable_js_api": false
+        }
+      },
+      "11989592277864780042": {
+        "type": "shopify:\/\/apps\/wholesale-pricing-discount\/blocks\/app-embed\/94cbfa01-7191-4bb2-bcd8-b519b9b3bd06",
+        "disabled": false,
+        "settings": {
+          "showCrossOutPrice": false,
+          "showCurrencyCodes": false,
+          "priceColor": "#000000",
+          "crossOutPriceColor": "#E9330C",
+          "appProxy": "\/apps\/wpdapp"
+        }
+      },
+      "17649911790975803669": {
+        "type": "shopify:\/\/apps\/facebook-ads-google-ads-ai\/blocks\/adscale\/4c8556b1-591d-4c26-940d-3f6695844f9e",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
   "presets": {
     "Default": {
       "ajax_cart_method": "drawer",
