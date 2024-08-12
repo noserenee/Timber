@@ -227,6 +227,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "18407591289870025": {
+        "type": "shopify:\/\/apps\/buildify\/blocks\/buildify\/c61a3e2d-2258-4e8a-82e5-6044f9fc79eb",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
