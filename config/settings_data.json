@@ -23,7 +23,7 @@
     "footer_newsletter_enable": true,
     "cart_notes_enable": true,
     "cart_vendor_enable": true,
-    "ajax_cart_method": "drawer",
+    "ajax_cart_method": "page",
     "social_twitter_link": "",
     "social_facebook_link": "Https:\/\/www.facebook.com\/Shopify\/noserene3",
     "content_for_index": [
