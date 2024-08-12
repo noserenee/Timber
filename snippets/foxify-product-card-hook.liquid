@@ -1,0 +1,137 @@
+{% liquid
+		assign productReviews = shop.metafields.foxify['product-reviews'].value
+		assign feraReviews = shop.metafields.foxify.fera.value
+		assign judgemeReviews = shop.metafields.foxify.judgeme.value
+		assign looxReviews = shop.metafields.foxify.loox.value
+		assign laiReviews = shop.metafields.foxify['lai-reviews'].value
+		assign aliReviews = shop.metafields.foxify.alireviews.value
+		assign stampedReviews = shop.metafields.foxify.stamped.value
+		assign rivyoReviews = shop.metafields.foxify.rivyo.value
+		assign growaveReviews = shop.metafields.foxify.growave.value
+		assign yotpoReviews = shop.metafields.foxify.yotpo.value
+		assign ryviuReviews = shop.metafields.foxify.ryviu.value
+		assign automizelyReviews = shop.metafields.foxify.automizely-reviews.value
+		assign trustooReviews = shop.metafields.foxify.trustoo.value
+		assign airReviews = shop.metafields.foxify.air-reviews.value
+		assign trustifyReviews = shop.metafields.foxify.trustify-reviews.value
+%}
+{% if productReviews != blank and productReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+		</div>
+{% endif %}
+{% if feraReviews != blank and feraReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div data-fera-container="product_reviews_summary" data-product-id="{{ product.id }}"></div>
+		</div>
+{% endif %}
+{% if laiReviews != blank and laiReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div
+						class="scm-reviews-rate"
+						data-rate-version2="{{product.metafields.scm_review_importer.reviewsData.reviewCountInfo | json}}"
+						data-product-id="{{product.id}}"
+				></div>
+		</div>
+{% endif %}
+{% if aliReviews != blank and aliReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div product-id="{{ product.id }}" class="alr-display-review-badge"></div>
+		</div>
+{% endif %}
+{% if looxReviews != blank and looxReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div
+						class="loox-rating"
+						data-id="{{ product.id }}"
+						data-rating="{{ product.metafields.loox.avg_rating }}"
+						data-raters="{{ product.metafields.loox.num_reviews }}"
+				></div>
+		</div>
+{% endif %}
+{% if judgemeReviews != blank and judgemeReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div class="jdgm-widget jdgm-preview-badge" data-id="{{ product.id }}">
+						{{ product.metafields.judgeme.badge }}
+				</div>
+		</div>
+{% endif %}
+{% if stampedReviews != blank and stampedReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+            <span
+								class="stamped-product-reviews-badge stamped-main-badge"
+								data-id="{{ product.id }}"
+								data-product-sku="{{ product.handle }}"
+								data-product-title="{{ product.title }}"
+								data-product-type="{{ product.type }}"
+						>
+              {{ product.metafields.stamped.badge }}
+            </span>
+		</div>
+{% endif %}
+{% if rivyoReviews != blank and rivyoReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div
+						class="wc_product_review_badge"
+						data-handle="{{ product.handle }}"
+						data-product_id="{{ product.id }}"
+				></div>
+		</div>
+{% endif %}
+{% if growaveReviews != blank and growaveReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				{% capture the_snippet_review_avg %}{% render 'ssw-widget-avg-rate-listing', product: product %}{% endcapture %}
+				{% unless the_snippet_review_avg contains 'Liquid error' %}
+						{{ the_snippet_review_avg }}
+				{% endunless %}
+		</div>
+{% endif %}
+{% if yotpoReviews != blank and yotpoReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div
+						class="yotpo bottomLine"
+						data-domain="{{shop.permanent_domain | escape }}"
+						data-product-id="{{ product.id }}"
+						data-product-models="{{ product.id }}"
+						data-name="{{ product.title | escape }}"
+						data-url="{{ shop.url }}{{ product.url }}"
+						data-image-url="{{ product.featured_image | product_img_url: 'large' |replace: '?', '%3F' | replace: '&','%26'}}"
+						data-description="{{ product.description | escape }}"
+				></div>
+		</div>
+{% endif %}
+{% if ryviuReviews != blank and ryviuReviews.show_product_rating %}
+		<div class="f:extension:rating-badge f:extension:rating-badge--product-card">
+				<div class="review-collection">
+						<ryviu-widget-total
+								collection="1"
+								reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape }}"
+								product_id="{{product.id}}"
+								handle="{{product.handle}}"
+						></ryviu-widget-total>
+				</div>
+		</div>
+{% endif %}
+{% if automizelyReviews != blank and automizelyReviews.show_product_rating %}
+		<div
+				class='automizely_reviews_product_collection_star_widget'
+				data-product-id="{{ product.id }}"
+				data-ratings="{{ product.metafields.automizely_reviews.ratings }}"
+				data-raters="{{ product.metafields.automizely_reviews.raters }}"
+		></div>
+{% endif %}
+{% if trustooReviews != blank and trustooReviews.show_product_rating %}
+		<div class="custom-vstar-rating-widget" product-id="{{ product.id }}"></div>
+{% endif %}
+{% if trustifyReviews != blank and trustifyReviews.show_product_rating %}
+		<div
+				class="trustify-review-stars-collection"
+				data-review-type="collection"
+				data-review-avg="{{ product.metafields.tr_reviews_product.review_avg }}"
+				data-review-count="{{ product.metafields.tr_reviews_product.review_count }}"
+
+		></div>
+{% endif %}
+{% if airReviews != blank and airReviews.show_product_rating %}
+		<div class="AirReviews-Widget AirReviews-Widget--Stars" data-review-avg="{{ product.metafields.air_reviews_product.review_avg }}" data-review-count="{{ card_product.metafields.air_reviews_product.review_count }}"></div>
+{% endif %}
