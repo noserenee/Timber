@@ -221,6 +221,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "8856629154746250496": {
+        "type": "shopify:\/\/apps\/foxify-page-builder\/blocks\/app-embed\/4e19e422-f550-4994-9ea0-84f23728223d",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
