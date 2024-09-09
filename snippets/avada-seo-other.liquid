@@ -6,7 +6,7 @@
 </script>
 
 <script>
-  const isSpeedUpEnable = !1725867068371 || Date.now() < 1725867068371;
+  const isSpeedUpEnable = !1726039880374 || Date.now() < 1726039880374;
   if (isSpeedUpEnable) {
     const avadaSpeedUp=1;
     if(isSpeedUpEnable) {
@@ -17,7 +17,7 @@ new LightJsLoader(["keydown","mousemove","touchend","touchmove","touchstart","wh
   }
 </script>
 
-{%- assign lightJsReplace = "if ((!1725867068371 || Date.now() < 1725867068371) &&
+{%- assign lightJsReplace = "if ((!1726039880374 || Date.now() < 1726039880374) &&
       (!window.AVADA_SPEED_BLACKLIST || window.AVADA_SPEED_BLACKLIST.some(pattern => pattern.test(s))) &&
       (!window.AVADA_SPEED_WHITELIST || window.AVADA_SPEED_WHITELIST.every(pattern => !pattern.test(s)))) s.type = 'lightJs'; else s.type = 'text/javascript'" -%}
 {%- assign lightJsContent = content_for_header | split: 'asyncLoad()' -%}
