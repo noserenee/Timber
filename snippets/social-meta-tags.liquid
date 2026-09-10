@@ -9,7 +9,7 @@
 {% elsif template contains 'product' %}
   <meta property="og:type" content="product">
   <meta property="og:title" content="{{ product.title | strip_html | escape }}">
-  {% for image in product.images reversed limit:3 %}
+  {% for image in product.images reversed limit: 3 %}
     <meta property="og:image" content="http:{{ image | img_url: '600x600' }}">
     <meta property="og:image:secure_url" content="https:{{ image | img_url: '600x600' }}">
   {% endfor %}
@@ -62,3 +62,13 @@
     <meta property="twitter:image" content="https:{{ article | img_url: '1024x1024' }}">
   {% endif %}
 {% endif %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{% for image in product.images reversed limit:3 %}"
+  to: "{% for image in product.images reversed limit: 3 %}"
+  position: 460..511
+{% endcomment %}
